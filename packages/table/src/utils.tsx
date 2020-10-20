@@ -167,7 +167,7 @@ export const useActionType = <T, U = any>(
       // eslint-disable-next-line no-param-reassign
       ref.current = userAction;
     }
-  }, []);
+  }, [counter.action.current]);
 };
 
 type PostDataType<T> = (data: T) => T;
